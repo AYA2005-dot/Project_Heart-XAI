@@ -6,8 +6,7 @@ import shap
 import matplotlib.pyplot as plt
 import pickle
 
-#  وظيفة لتنسيق التقرير النهائي
-def generate_report(input_df, prob, high_risk, low_risk):
+def generate_report(input_df, prob, high_risk, low_risk): 
     st.markdown("---")
     st.markdown("<h2 style='text-align: center; color: #007bff;'>📄 التقرير الطبي </h2>", unsafe_allow_html=True)
     
