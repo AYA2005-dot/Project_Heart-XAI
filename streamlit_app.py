@@ -18,7 +18,7 @@ def generate_report(input_df, prob, high_risk, low_risk):
         st.write(f"**درجة اليقين (Confidence):** {prob:.1%}")
 
     st.markdown("### 📋 ملخص البيانات السريرية")
-    st.table(input_df.T.rename(columns={0: 'القيمة'})) # عرض البيانات بشكل رأسي أنيق
+    st.table(input_df.T.rename(columns={0: 'القيمة'})) 
 
     st.markdown("### التوصيف الفني للقرار (AI Insights)")
     st.write("بناءً على نموذج **XGBoost** وتحليل **SHAP**، تم تحديد المؤشرات التالية كأكثر العوامل تأثيراً:")
@@ -33,7 +33,7 @@ def generate_report(input_df, prob, high_risk, low_risk):
         for _, row in low_risk.iterrows():
             st.write(f"- {translate.get(row['Feature'])} ({row['Impact']:.2f})")
 
-    st.warning("**إخلاء مسؤولية:** هذا التقرير هو نتاج خوارزميات ذكاء اصطناعي لدعم القرار السريري، ويجب مراجعته واعتماده من قبل طبيب القلب المختص قبل اتخاذ أي إجراء علاجي.")
+    st.warning("**يجب مراجعته واعتماده من قبل طبيب القلب المختص قبل اتخاذ أي إجراء علاجي")
 
 # ......
 
@@ -162,7 +162,6 @@ if model is not None:
         else:
             st.write(".لا توجد عوامل حماية بارزة")
 
-# استدعاء الوظيفة عند ضغط الزر في نهاية التطبيق
 if st.button("🖨️ توليد التقرير الطبي الكامل"):
     generate_report(input_df, prob, high_risk, low_risk)
 
