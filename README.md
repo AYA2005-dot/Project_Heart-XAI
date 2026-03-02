@@ -1,6 +1,6 @@
 # 🩺 Explainable AI for Heart Disease Prediction
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://projectheartxai-ypojknjvxhajwicgxjct6m.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://projectheart-xai-iyfmcpr2yk48zhxr8s6xy5.streamlit.app)
 
 
 ## 📝 Abstract
