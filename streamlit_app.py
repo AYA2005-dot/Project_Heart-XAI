@@ -124,7 +124,7 @@ if model is not None:
         explainer = shap.Explainer(model)
         shap_values = explainer(input_df)
         fig, ax = plt.subplots(figsize=(10, 6))
-        shap.plots.waterfall(shap_values[0], show=False)
+        shap.plots.bar(shap_values[0],show=False)
         st.pyplot(fig)
 
     st.markdown("---")
