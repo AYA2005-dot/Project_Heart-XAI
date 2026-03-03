@@ -57,7 +57,7 @@ The sidebar allows doctors to input vital signs and lab results efficiently.
 ### **2. Explaining the AI Logic (SHAP)**
 Visualizing the underlying logic behind each prediction to build clinical trust.
 
-![SHAP Explanation](images/shap_waterfall.png)
+![SHAP Explanation](images/shap_barPlot.png)
 
 ### **3. Smart Analysis Report (Arabic)**
 A unique feature that summarizes the risk factors in plain Arabic for quick decision-making.
